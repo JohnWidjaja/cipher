@@ -45,7 +45,7 @@ function Salted() {
 			setMD5Hash(md5HashValue);
 			setMD5HashWithSalt(md5HashWithSaltValue);
 		}
-	}, [randomSalt]);
+	}, [randomSalt, inputString]); // Include inputString as a dependency
 
 	return (
 		<div>
